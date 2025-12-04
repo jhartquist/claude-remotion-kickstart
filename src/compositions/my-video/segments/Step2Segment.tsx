@@ -45,11 +45,11 @@ export const Step2Segment: React.FC = () => {
         textStartTime={1.2}
         contentStartTime={2.5}
       >
-        <div className="w-full max-w-4xl">
+        <div className="w-full max-w-6xl">
           <Code
             code={codeSnippet}
             language="tsx"
-            theme="vitesse-dark"
+            theme="gruvbox-dark-hard"
             highlightLines={currentHighlight?.lines}
           />
         </div>

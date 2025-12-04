@@ -11,7 +11,7 @@ export const Step3Segment: React.FC = () => {
         textStartTime={1.52}
         contentStartTime={3.0}
       >
-        <div className="w-full h-full max-w-5xl max-h-[500px] rounded-lg overflow-hidden">
+        <div className="w-full max-w-6xl rounded-lg overflow-hidden">
           <Video
             src={staticFile("ai-visualization.mp4")}
             className="w-full h-full object-cover"

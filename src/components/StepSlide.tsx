@@ -64,7 +64,7 @@ export const StepSlide: React.FC<StepSlideProps> = ({
         src={staticFile("gruvbox-bg.png")}
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/60 z-0" />
       <div className="w-full z-10">
         <h1
           className="text-5xl font-bold text-gruvbox-yellow mb-4 font-mono"
