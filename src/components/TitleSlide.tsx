@@ -1,4 +1,4 @@
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { z } from "zod";
 
 export const titleSlideSchema = z.object({
@@ -17,9 +17,14 @@ export const TitleSlide: React.FC<TitleSlideProps> = ({ title, className }) => {
   });
 
   return (
-    <AbsoluteFill className={`bg-black flex items-center justify-center ${className ?? ""}`}>
+    <AbsoluteFill className={`flex items-center justify-center ${className ?? ""}`}>
+      <Img
+        src={staticFile("gruvbox-bg.png")}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-black/60" />
       <div
-        className="text-8xl font-bold text-white"
+        className="text-6xl font-bold text-gruvbox-fg font-mono text-center px-16 z-10"
         style={{
           opacity,
         }}

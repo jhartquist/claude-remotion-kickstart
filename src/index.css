@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Gruvbox Dark Theme */
+@theme {
+  --color-gruvbox-bg: #282828;
+  --color-gruvbox-bg1: #3c3836;
+  --color-gruvbox-bg2: #504945;
+  --color-gruvbox-fg: #ebdbb2;
+  --color-gruvbox-fg2: #d5c4a1;
+  --color-gruvbox-red: #fb4934;
+  --color-gruvbox-green: #b8bb26;
+  --color-gruvbox-yellow: #fabd2f;
+  --color-gruvbox-blue: #83a598;
+  --color-gruvbox-purple: #d3869b;
+  --color-gruvbox-aqua: #8ec07c;
+  --color-gruvbox-orange: #fe8019;
+
+  --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", "Monaco", "Consolas", monospace;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-mono);
+}
