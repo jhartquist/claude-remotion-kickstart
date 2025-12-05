@@ -1,9 +1,11 @@
-import { AbsoluteFill, Img, staticFile } from "remotion";
+import { Audio, staticFile } from "remotion";
+import { TitleSlide } from "../../../components/TitleSlide";
 
 export const IntroSegment: React.FC = () => {
   return (
-    <AbsoluteFill className="bg-white flex items-center justify-center">
-      <Img src={staticFile("images/logo.png")} alt="Logo" />
-    </AbsoluteFill>
+    <>
+      <TitleSlide title="How to Explain Things to Programmers" />
+      <Audio src={staticFile("audio/vo-intro.mp3")} />
+    </>
   );
 };

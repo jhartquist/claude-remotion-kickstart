@@ -104,12 +104,12 @@ export const CodeSlide: React.FC<CodeSlideProps> = ({
 				<div className="w-full">
 					<style>{`
 						.shiki {
-							padding: 1.5rem;
-							border-radius: 0.5rem;
+							padding: 2rem;
+							border-radius: 0.75rem;
 							overflow-x: auto;
 							font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
-							font-size: 0.875rem;
-							line-height: 1.5;
+							font-size: 1.75rem;
+							line-height: 1.6;
 						}
 
 						${showLineNumbers ? `
